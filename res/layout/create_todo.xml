@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Slideshow" >
+   
+    
+    <EditText 
+        android:id="@+id/addTodo_txt"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="text"
+        android:scrollbars="vertical"
+        android:textSize="18sp"
+        android:gravity="left"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/todo_hint"
+        android:layout_centerVertical="true"
+        />
+    
+    <Button
+            android:id="@+id/add"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            
+            android:text="@string/add"
+            android:textColor="@color/text_color" 
+            android:onClick="onAddTodo"
+            android:layout_below="@+id/addTodo_txt"
+            />
+    <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dip"
+            android:layout_height="40dip"
+            
+            android:text="@string/cancel"
+            android:textColor="@color/text_color" 
+            android:onClick="onCancelTodo"
+            android:layout_below="@+id/addTodo_txt"
+            android:layout_toRightOf="@+id/add"
+            
+            />
+    
+
+</RelativeLayout>
